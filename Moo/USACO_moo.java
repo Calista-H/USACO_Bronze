@@ -6,7 +6,7 @@ public class USACO_moo {
   // Find the length of the k-th sequence.
   static int length(int k) {
     // base case
-    if (k < 0) {
+    if (k <= 0) {
       return 0;
     }
     
