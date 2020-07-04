@@ -30,6 +30,7 @@ public class USACO_cow_photography {
   }
   
   public static void main(String[] args) {
+    // Test Test Test
     Scanner scan = new Scanner(System.in);
     int size = scan.nextInt();
     // Read in 5 patterns.
