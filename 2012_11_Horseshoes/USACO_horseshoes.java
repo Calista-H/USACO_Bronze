@@ -12,7 +12,7 @@ public class USACO_horseshoes{
             return;
         }
         // Found the a balanced string. Update longest_balanced_length if needed.
-        if (num_open == num_closed) {
+        if (num_open != 0 && num_open == num_closed) {
             longest_balanced_length = Math.max(longest_balanced_length,
                     num_open + num_closed);
             return;
@@ -69,6 +69,4 @@ public class USACO_horseshoes{
 ()((
 (()(
 ))))
-
-
  */
