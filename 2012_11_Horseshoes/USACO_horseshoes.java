@@ -34,13 +34,13 @@ public class USACO_horseshoes{
                 }
                 else if (old_horseshoe == ')') {
                     calc_balanced_path(new_row, new_column, num_open,
-                            num_closed  + 1, false);
+                                       num_closed  + 1, false);
                 }
             }
             else {
                 if (old_horseshoe == ')') {
                     calc_balanced_path(new_row, new_column, num_open,
-                            num_closed + 1, false);
+                                       num_closed + 1, false);
                 }
             }
         }
