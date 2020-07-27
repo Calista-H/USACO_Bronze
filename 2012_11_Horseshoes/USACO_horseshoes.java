@@ -29,15 +29,18 @@ public class USACO_horseshoes{
             int new_column = column + delta_column[i];
             if (is_open_half) {
                 if (old_horseshoe =='(') {
-                    calc_balanced_path(new_row, new_column, num_open + 1, num_closed, true);
+                    calc_balanced_path(new_row, new_column, num_open + 1,
+                                       num_closed, true);
                 }
                 else if (old_horseshoe == ')') {
-                    calc_balanced_path(new_row, new_column, num_open,num_closed  + 1, false);
+                    calc_balanced_path(new_row, new_column, num_open,
+                            num_closed  + 1, false);
                 }
             }
             else {
                 if (old_horseshoe == ')') {
-                    calc_balanced_path(new_row, new_column, num_open, num_closed + 1, false);
+                    calc_balanced_path(new_row, new_column, num_open,
+                            num_closed + 1, false);
                 }
             }
         }
