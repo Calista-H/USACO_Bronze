@@ -44,17 +44,17 @@ public class USACO_meet_and_greet_array_list {
 
         // Fill in extra locations to reflect any cow standing still.
         int max_size = Math.max(bessie_location.size(), elsie_location.size());
-        for (int i = bessie_location.size() + 1; i < max_size + 1; i++) {
+        for (int i = bessie_location.size(); i < max_size; i++) {
             bessie_location.add(bessie_location.get(bessie_location.size() - 1));
         }
-        for (int i = elsie_location.size() + 1; i < max_size + 1; i++) {
+        for (int i = elsie_location.size(); i < max_size; i++) {
             elsie_location.add(elsie_location.get(elsie_location.size() - 1));
         }
 
         // Check if Elsie and Bessie meet and count the number of interactions.
         for (int i = 1; i < max_size + 1; i++) {
-            if (bessie_location.indexOf(i) == elsie_location.indexOf(i) &&
-                bessie_location.indexOf(i - 1) != elsie_location.indexOf(i - 1) ) {
+            if (bessie_location.get(i) == elsie_location.get(i) &&
+                bessie_location.get(i - 1) != elsie_location.get(i - 1) ) {
                 moo_counter ++;
             }
         }
